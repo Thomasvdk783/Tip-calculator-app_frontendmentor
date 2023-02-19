@@ -29,15 +29,59 @@
       <section class="bill-container">
         <label for="bill">Bill</label>
 
-        <input type="text" id="bill-number" name="bill" placeholder="$" value="0">
+        <div class="container-input">
+          <p>$</p>
+          <input type="text" id="bill-number" name="bill" placeholder="0" value="">
+        </div>
       </section>
       <section class="select-tip">
         <label for="tip">Select Tip %</label>
+        <div class="container-tip-button-first">
+          <button class="tip-btn 5%">5%</button>
+          <button class="tip-btn 10%">10%</button>
+          <button class="tip-btn 15%">15%</button>
+        </div>
+        <div class="container-tip-button-second">
+          <button class="tip-btn 25%">25%</button>
+          <button class="tip-btn 50%">50%</button>
+          <button class="tip-btn-custom">Custom</button>
+        </div>
+      </section>
+      <section class="number-people-container">
+        <label for="bill">Number of People</label>
+
+        <div class="container-input">
+          <p>$</p>
+          <input type="text" id="bill-number" name="bill" placeholder="0" value="">
+        </div>
       </section>
     </article>
 
     <article class="right-part-app">
-
+      <div class="top-part">
+        <section class="tip-amount">
+          <div class="container-info-tip-amount">
+            <h3 class="title-tip-amount">Tip Amount</h3>
+            <p class="p-amount">/ person</p>
+          </div>
+          <div class="container-result-tip-amount">
+            <p class="result-tip-amount">$0.00</p>
+          </div>
+        </section>
+        <section class="total">
+          <div class="container-info-total">
+            <h3 class="title-total">Total</h3>
+            <p class="p-total">/ person</p>
+          </div>
+          <div class="container-result-total">
+            <p class="result-total">$0.00</p>
+          </div>
+        </section>
+      </div>
+      <div class="bottom-part">
+        <button class="reset">RESET</button>
+      </div>
+      
     </article>
   </main>
   <!--

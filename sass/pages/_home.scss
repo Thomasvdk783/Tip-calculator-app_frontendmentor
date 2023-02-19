@@ -2,28 +2,75 @@
 
 header{
     h1{
-        letter-spacing: 5px;
-        font-weight: 700;
+        letter-spacing: 10px;
+        font-weight: lighter;
+        color:hsl(186, 14%, 43%);
     }
 }
 
 main{
-    width: 600px;
+    max-width: 660px;
+    width: 100%;
+    height: auto;
     border-radius: 15px;
     background-color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .left-part-app{
+    max-width: 300px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    .bill-container{
+    gap: 30px;
+    .bill-container, .number-people-container{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
     }
+    label{
+        color: hsl(186, 14%, 43%);
+    }
 }
 
+.container-input{
+    font-family: 'Space Mono', monospace;
+    border: none;
+    max-width: 300px;
+    width: 100%;
+    background-color: hsl(189, 41%, 97%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    color: hsl(185, 41%, 84%);
+}
 input{
+    font-family: 'Space Mono', monospace;
+    border: none;
+    max-width: 280px;
+    width: 100%;
+    background-color: hsl(189, 41%, 97%);
+    display: flex;
+    align-self: flex-end;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    color: hsl(185, 41%, 84%);
+}
 
+.right-part-app{
+    max-width: 300px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: hsl(183, 100%, 15%);
+    display: flex;
+    flex-direction: column;
 }
