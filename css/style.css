@@ -14,9 +14,10 @@ body {
   font-family: "Space Mono", monospace;
 }
 
-@media screen and (max-width: 650) {
+@media screen and (max-width: 650px) {
   body {
-    height: 100%;
+    height: auto;
+    gap: 40px;
   }
 }
 /* style for btn tip app */
@@ -53,6 +54,34 @@ body {
   cursor: pointer;
 }
 
+.reset-btn {
+  width: 100%;
+  border: none;
+  background-color: hsl(186deg, 14%, 43%);
+  font-family: "Space Mono", monospace;
+  color: hsl(183deg, 100%, 15%);
+  border-radius: 5px;
+  padding: 10px;
+}
+.reset-btn:hover {
+  background-color: hsl(172deg, 67%, 45%);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 650wpx) {
+  .container-tip-button-first, .container-tip-button-second {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-tip-button-first .tip-btn, .container-tip-button-second .tip-btn {
+    width: 50%;
+    height: 35px;
+  }
+  .container-tip-button-first .tip-btn-custom, .container-tip-button-second .tip-btn-custom {
+    width: 50%;
+    height: 35px;
+  }
+}
 /* style for Home page app */
 header h1 {
   letter-spacing: 10px;
@@ -120,12 +149,57 @@ input {
 }
 
 .right-part-app {
-  max-width: 300px;
+  max-width: 240px;
   width: 100%;
+  padding: 40px;
+  height: 270px;
   border-radius: 15px;
   background-color: hsl(183deg, 100%, 15%);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+.right-part-app .top-part {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.right-part-app .top-part .tip-amount, .right-part-app .top-part .total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.right-part-app .top-part .tip-amount .container-info-tip-amount h3, .right-part-app .top-part .tip-amount .container-info-total h3, .right-part-app .top-part .total .container-info-tip-amount h3, .right-part-app .top-part .total .container-info-total h3 {
+  font-size: 14px;
+  color: hsl(0deg, 0%, 100%);
+}
+.right-part-app .top-part .tip-amount .container-info-tip-amount p, .right-part-app .top-part .tip-amount .container-info-total p, .right-part-app .top-part .total .container-info-tip-amount p, .right-part-app .top-part .total .container-info-total p {
+  font-size: 12px;
+  color: hsl(184deg, 14%, 56%);
+}
+.right-part-app .top-part .tip-amount .container-result-tip-amount p, .right-part-app .top-part .tip-amount .container-result-total p, .right-part-app .top-part .total .container-result-tip-amount p, .right-part-app .top-part .total .container-result-total p {
+  color: hsl(172deg, 67%, 45%);
+  font-size: 24px;
+}
+
+@media screen and (max-width: 650px) {
+  header {
+    margin-top: 20px;
+  }
+  main {
+    max-width: 355px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 10px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

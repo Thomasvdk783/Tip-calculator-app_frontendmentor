@@ -14,8 +14,9 @@ body{
     font-family: 'Space Mono', monospace;
 }
 
-@media screen and (max-width:650){
+@media screen and (max-width:650px){
     body {
-        height: 100%;
+        height: auto;
+        gap: 40px;
     }
 }
